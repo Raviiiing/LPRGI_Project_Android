@@ -24,6 +24,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="@string/liste_de_livres"
+        android:onClick="ListerLesLivresActivity"
         app:layout_constraintStart_toStartOf="@+id/btn_ajouter_livre"
         app:layout_constraintTop_toBottomOf="@+id/btn_ajouter_livre" />
 

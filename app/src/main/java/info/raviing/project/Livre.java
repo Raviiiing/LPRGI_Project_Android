@@ -1,12 +1,20 @@
 package info.raviing.project;
 
 import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
+@Entity
 public class Livre implements Serializable {
 
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+    @ColumnInfo(name = "titre")
     private String titre;
+    @ColumnInfo(name = "auteur")
     private String auteur;
 
     public Livre(String titre, String auteur) {
@@ -37,6 +45,15 @@ public class Livre implements Serializable {
 
     public void setAuteur(String auteur) {
         this.auteur = auteur;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }
