@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="ajouter_un_livre">Ajouter un livre</string>
+    <string name="liste_de_livres">Liste de livres</string>
+    <string name="bienvenue_dans_la_biblioth_que">Bienvenue dans la bibliothéque</string>
+    <string name="ajouter_le_livre">Ajouter le livre</string>
+    <string name="titre">Titre</string>
+    <string name="auteur">Auteur</string>
+    <string name="titre_du_livre">Titre du livre</string>
+    <string name="nom_de_l_auteur">Nom de l\'auteur</string>
+    <string name="ex_name">Bertrand</string>
+    <string name="ex_titre">Au clair de la lune</string>
+</resources>
