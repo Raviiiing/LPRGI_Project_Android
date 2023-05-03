@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/btn_liste_retour"
-        android:scrollbars="vertical"/>
+        android:scrollbars="vertical"
+        android:textColor="#FFE500"
+        />
 
     <Button
         android:id="@+id/btn_liste_retour"

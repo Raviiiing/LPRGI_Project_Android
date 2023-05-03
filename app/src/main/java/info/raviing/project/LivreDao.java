@@ -14,4 +14,8 @@ public interface LivreDao {
 
     @Insert
     void insert(Livre livre);
+
+    @Query("SELECT * FROM livre WHERE titre LIKE '%' || :search || '%' OR auteur LIKE '%' || :search || '%'")
+    List<Livre> findBySearch(String search);
+
 }
