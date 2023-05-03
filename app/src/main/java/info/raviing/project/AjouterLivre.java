@@ -9,6 +9,10 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+
+/**
+ * Classe AjouterLivre est liée à l'activité ajouter_livre.xml qui permet d'ajouter un livre
+ */
 public class AjouterLivre extends AppCompatActivity {
 
     @Override
@@ -17,10 +21,11 @@ public class AjouterLivre extends AppCompatActivity {
         setContentView(R.layout.activity_ajouter_livre);
 
         findViewById(R.id.btn_valider_ajout_livre).setOnClickListener(v -> {
-            // Ajouter un livre
+            // Ajouter un livre, on prend les données des champs
             EditText titre = findViewById(R.id.input_titre);
             EditText auteur = findViewById(R.id.input_auteur);
 
+            // Vérifier que les champs ne sont pas vides
             if(titre.getText().toString().isEmpty() || auteur.getText().toString().isEmpty()) {
                 // Afficher un toast pour dire que les champs sont vides
                 Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
@@ -37,7 +42,9 @@ public class AjouterLivre extends AppCompatActivity {
         });
     }
 
-    // Fonction bouton retour accueil
+    /**
+     * @param view bouton retour à l'activité principale
+     */
     public void RetournerAccueil(View view) {
         finish();
     }

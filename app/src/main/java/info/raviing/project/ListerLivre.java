@@ -14,6 +14,9 @@ import android.widget.ListView;
 
 import java.util.List;
 
+/**
+ * Classe ListerLivre est liée à l'activité lister_livre.xml qui permet de lister les livres
+ */
 public class ListerLivre extends AppCompatActivity {
 
     Context context = this;
@@ -35,18 +38,34 @@ public class ListerLivre extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param view Bouton Retourner à l'accueil
+     */
     public void RetournerAccueil(View view) {
         finish();
     }
 
+    /**
+     * Permet de créer le menu de recherche dans la barre d'action et de gérer les événements
+     * @param menu Menu de recherche dans la barre d'action
+     * @return true
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Créer le menu de recherche dans la barre d'action
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
+        // Gérer les événements
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) searchItem.getActionView();
         context = this;
+        // Gérer les événements de la SearchView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            /**
+             * Appelé lorsque l'utilisateur soumet la requête et affiche les résultats de la recherche
+             * @param query Texte de la recherche soumis par l'utilisateur
+             * @return true
+             */
             @Override
             public boolean onQueryTextSubmit(String query) {
                 // Traitement de la recherche lorsque l'utilisateur soumet la requête
@@ -60,6 +79,11 @@ public class ListerLivre extends AppCompatActivity {
                 return true;
             }
 
+            /**
+             * Appelé lorsque l'utilisateur modifie le texte de la recherche et affiche les résultats de la recherche
+             * @param newText Texte de la recherche à chaque changement de texte dans la SearchView
+             * @return true
+             */
             @Override
             public boolean onQueryTextChange(String newText) {
                 // Traitement de la recherche à chaque changement de texte dans la SearchView
@@ -70,7 +94,7 @@ public class ListerLivre extends AppCompatActivity {
                 ListView listView = (ListView) findViewById(R.id.list);
                 ArrayAdapter adapter = new ArrayAdapter(context, android.R.layout.simple_list_item_1, livres);
                 listView.setAdapter(adapter);
-                return false;
+                return true;
             }
         });
 
