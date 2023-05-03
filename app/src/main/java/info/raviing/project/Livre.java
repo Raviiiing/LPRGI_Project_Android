@@ -25,10 +25,7 @@ public class Livre implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return "Livre{" +
-                "titre='" + titre + '\'' +
-                ", auteur='" + auteur + '\'' +
-                '}';
+        return titre + ", par " + auteur;
     }
 
     public String getTitre() {

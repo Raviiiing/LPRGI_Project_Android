@@ -22,15 +22,16 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="71dp"
+        android:layout_marginTop="198dp"
         android:layout_marginEnd="71dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="311dp"
         android:ems="10"
         android:hint="@string/ex_titre"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/label_auteur"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ajouterlivre_retour"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_titre" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input_auteur"
@@ -68,5 +69,17 @@
         android:text="@string/nom_de_l_auteur"
         app:layout_constraintBottom_toTopOf="@+id/input_auteur"
         app:layout_constraintStart_toStartOf="@+id/input_auteur"
+        app:layout_constraintTop_toBottomOf="@+id/input_titre" />
+
+    <Button
+        android:id="@+id/btn_ajouterlivre_retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="126dp"
+        android:text="@string/retour"
+        android:onClick="RetournerAccueil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_valider_ajout_livre"
         app:layout_constraintTop_toBottomOf="@+id/input_titre" />
 </androidx.constraintlayout.widget.ConstraintLayout>
