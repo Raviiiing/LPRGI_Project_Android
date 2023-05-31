@@ -1,4 +1,6 @@
-**Evaluation LP-RGI Alt Module Web Dynamique - Android 2022-2023** 
+# Evaluation LP-RGI Alt Module Web Dynamique - Android 2022-2023
+
+[![Licence CC BY-NC](https://img.shields.io/badge/License-CC%20BY--NC-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Voici le sujet sur lequel vous avez à travailler et sur lequel vous serez évalué dans le cadre de ce module Web Dynamique - Android. 
 
