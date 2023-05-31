@@ -11,6 +11,6 @@
     <string name="nom_de_l_auteur">Autor name</string>
     <string name="ex_name">Mister Toony</string>
     <string name="ex_titre">By Moonlight</string>
-    <string name="retour">Retour</string>
-    <string name="search">Recherche</string>
+    <string name="retour">Go back</string>
+    <string name="search">Search</string>
 </resources>
